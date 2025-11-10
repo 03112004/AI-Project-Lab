@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Project Lab — 48-Hour AI/DS Mini Projects | Kumaran.V</title>
+  <meta name="description" content="AI Project Lab by Kumaran.V — Book a slot (₹500) and get professor-ready AI/Data-Science mini-projects delivered in 24–48 hours (notebook, report, slides). Mentor-guided & reproducible." />
+  <meta name="theme-color" content="#3b82f6">
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"AI Project Lab — 48-Hour AI/DS Mini Projects",
+    "provider":"Kumaran.V",
+    "description":"Rapid, mentor-led AI/Data-Science mini-projects delivered in 24–48 hours. Includes runnable notebook, report, and slides.",
+    "areaServed":"IN",
+    "serviceType":["AI Projects","Data Science Mini-Projects","Student Mentorship"],
+    "url":"https://forms.gle/iAeuo6K2cNth3tCK7"
+  }
+  </script>
+
+  <!-- CONFIG: Edit these values only -->
+  <script>
+    const FORM_URL = "https://forms.gle/iAeuo6K2cNth3tCK7"; // ← your provided Google Form
+    const WHATSAPP_NUMBER = "919159930410"; // ← country code + number (you gave 9159930410 -> use 91 prefix)
+    const EMAIL = "kumaran.v.4002@gmail.com";
+    const FOUNDER = "Kumaran.V";
+    const BRAND = "AI Project Lab";
+    const SLOT_FEE = 500; // shown in UI
+  </script>
+
+  <!-- Inline critical styles (mobile-first) -->
+  <style>
+    :root{
+      --bg: #fbfdff;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#6b7280;
+      --accent:#3b82f6;
+      --accent-2:#7c3aed;
+      --radius:12px;
+      --container:960px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--text);
+      background:linear-gradient(180deg,#f4f9ff 0%,var(--bg) 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding-bottom:92px; /* for sticky CTA */
+      line-height:1.45;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--container);margin:0 auto;padding:18px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 0}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#fff;font-weight:800}
+    .brand h1{font-size:16px;margin:0;font-weight:700}
+    .contact-small{font-size:13px;color:var(--muted)}
+
+    /* HERO */
+    .hero{display:flex;flex-direction:column;gap:14px;padding:6px 0;text-align:center}
+    .headline{font-size:20px;font-weight:800;margin:6px 0;}
+    .sub{color:var(--muted);font-size:14px;max-width:680px;margin:0 auto}
+    .hero-card{background:var(--card);border-radius:14px;padding:14px;box-shadow:0 8px 28px rgba(15,23,42,0.06);display:flex;flex-direction:column;gap:12px;align-items:center}
+    /* video container */
+    .video-wrap{width:100%;max-width:920px;border-radius:10px;overflow:hidden;display:block;background:#000}
+    video{width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:16/9;background:#000}
+
+    /* CTA */
+    .cta-row{display:flex;flex-direction:column;gap:8px;width:100%;max-width:520px;align-items:center}
+    .primary-cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 18px;border-radius:12px;border:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;font-weight:700;font-size:16px;cursor:pointer;box-shadow:0 10px 30px rgba(59,130,246,0.16);text-decoration:none}
+    .secondary{background:transparent;border:0;color:var(--muted);font-size:13px}
+
+    .badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+    .badge{background:rgba(59,130,246,0.08);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px}
+
+    /* steps */
+    .steps{display:grid;grid-template-columns:1fr;gap:10px;margin-top:8px}
+    .step{display:flex;gap:10px;align-items:flex-start;padding:10px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfbff);border:1px solid rgba(15,23,42,0.03)}
+    .num{width:40px;height:40px;border-radius:8px;display:grid;place-items:center;background:white;color:var(--accent);font-weight:800;box-shadow:0 8px 20px rgba(59,130,246,0.06)}
+    .step h4{margin:0;font-size:14px}
+    .step p{margin:4px 0 0 0;color:var(--muted);font-size:13px}
+
+    /* pricing / testimonials */
+    .pricing{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+    .price-box{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#f7fbff);border:1px solid rgba(0,0,0,0.04)}
+    .price-amt{font-weight:800;color:var(--accent)}
+    .note{font-size:13px;color:var(--muted)}
+
+    .testimonials{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+    .tcard{background:#fff;border-radius:10px;padding:10px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+
+    footer{margin-top:22px;padding:12px 0;text-align:center;color:var(--muted);font-size:13px}
+
+    /* sticky CTA for mobile */
+    .sticky{position:fixed;left:12px;right:12px;bottom:14px;z-index:999;display:flex;align-items:center;justify-content:center;padding:12px;border-radius:14px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;font-weight:800;box-shadow:0 20px 40px rgba(59,130,246,0.18)}
+    .sticky a{color:#fff;text-decoration:none;font-size:16px}
+
+    /* responsiveness */
+    @media(min-width:860px){
+      .hero{flex-direction:row;align-items:center;text-align:left;gap:22px}
+      .hero-card{flex-direction:row;align-items:center;justify-content:space-between;padding:20px}
+      .steps{grid-template-columns:repeat(3,1fr)}
+      .cta-row{align-items:flex-start}
+    }
+
+    /* focus states */
+    a:focus,button:focus{outline:3px solid rgba(59,130,246,0.12);outline-offset:3px}
+  </style>
+</head>
+<body>
+  <main class="wrap" id="top">
+    <!-- HEADER -->
+    <header>
+      <a class="brand" href="#top" aria-label="AI Project Lab home">
+        <div class="logo" aria-hidden="true">AI</div>
+        <div>
+          <h1>AI Project Lab</h1>
+          <div class="contact-small">by <strong>Kumaran.V</strong></div>
+        </div>
+      </a>
+      <div>
+        <a class="primary-cta" id="headerBooking" href="#" role="button" aria-label="Reserve slot ₹500">Reserve ₹500</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title" class="headline">AI & Data-Science Projects — Delivered in 48 hours 🚀</h2>
+      <p class="sub">Professor-ready mini-projects with runnable code, a concise report, and presentation slides. Mentor-guided and reproducible — ideal for final-year students.</p>
+
+      <div class="hero-card" role="region" aria-label="Booking and preview">
+        <!-- Video (local file) -->
+        <div style="width:100%;max-width:880px">
+          <div class="video-wrap" role="img" aria-label="Preview video of AI Project Lab process">
+            <!-- Note: AIPL.mp4 must be in same directory as this HTML file -->
+            <video 
+  id="heroVideo" 
+  preload="metadata" 
+  playsinline 
+  controls 
+  loop 
+  poster="PosterTumpnail.png"
+  aria-label="AI Project Lab video presentation"
+>
+  <source src="AIPL.mp4" type="video/mp4">
+  Your browser does not support embedded video. Visit the form to book a slot.
+</video>
+
+          </div>
+        </div>
+
+        <!-- CTA column -->
+        <div class="cta-row" style="margin-top:10px">
+          <a class="primary-cta" id="bookNow" href="#" aria-label="Book my slot now">Book My Slot ₹500 Now</a>
+          <button id="waContact" class="secondary" aria-label="Contact on WhatsApp">Quick question? Message on WhatsApp</button>
+          <div class="badges" role="list">
+            <div class="badge" role="listitem">24–48 hr delivery</div>
+            <div class="badge" role="listitem">Code • Report • Slides</div>
+            <div class="badge" role="listitem">Mentor-guided</div>
+          </div>
+          <div class="micro note">Slot fee ₹500 (non-refundable); final fee confirmed after scope (₹1,000–₹3,000, includes slot fee).</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section aria-labelledby="how-head" style="margin-top:14px">
+      <h3 id="how-head" style="font-size:16px;margin:0 0 8px 0">How it works</h3>
+      <div class="steps" role="list">
+        <div class="step" role="listitem"><div class="num">1</div><div><h4>Reserve ₹500</h4><p>Pay the slot fee and fill the intake form.</p></div></div>
+        <div class="step" role="listitem"><div class="num">2</div><div><h4>Scope confirmation</h4><p>We prepare a mentor-led proposal; reply with confirmation to start.</p></div></div>
+        <div class="step" role="listitem"><div class="num">3</div><div><h4>Build</h4><p>We develop the project in 24–48 hours and test reproducibility.</p></div></div>
+        <div class="step" role="listitem"><div class="num">4</div><div><h4>Delivery</h4><p>Receive notebook, report, slides & demo via Drive.</p></div></div>
+        <div class="step" role="listitem"><div class="num">5</div><div><h4>Walkthrough</h4><p>Optional 30-min mentor session to prepare your presentation (paid).</p></div></div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section aria-labelledby="pricing-head" style="margin-top:16px">
+      <h3 id="pricing-head" style="font-size:16px;margin:0 0 8px 0">Pricing (example range)</h3>
+      <div class="pricing">
+        <div class="price-box"><div><strong>Basic</strong><div class="note">Notebook + Report + Slides</div></div><div class="price-amt">₹1,000–₹3,000*</div></div>
+        <div class="note">*You already paid ₹500 to reserve. Final price depends on scope complexity and will be confirmed after intake.</div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section aria-labelledby="testi-head" style="margin-top:14px">
+      <h3 id="testi-head" style="font-size:16px;margin:0 0 8px 0">What students say</h3>
+      <div class="testimonials" aria-live="polite">
+        <div class="tcard"><strong>"Delivered in 36 hours and the code ran perfectly on Colab."</strong><p>— Anjali, B.Tech AI</p></div>
+        <div class="tcard"><strong>"Report and slides were professor-ready. Great guidance."</strong><p>— Ravi, Final Year</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="font-weight:700">AI Project Lab — by <strong>Kumaran.V</strong></div>
+      <div class="note" style="margin-top:8px">Questions? WhatsApp: <a id="footerWA" href="#">+91 9159930410</a> • Email: <a href="mailto:kumaran.v.4002@gmail.com">kumaran.v.4002@gmail.com</a></div>
+      <div style="margin-top:8px;color:var(--muted)">Only 20 seats available per batch — reserve now.</div>
+    </footer>
+  </main>
+
+  <!-- STICKY CTA -->
+  <div class="sticky" role="dialog" aria-label="Quick booking">
+    <a id="stickyBtn" href="#" aria-label="Reserve slot now">Book Slot ₹500 — Reserve Now</a>
+  </div>
+
+  <!-- Minimal JS: behavior, accessibility, lazy video play, analytics hooks -->
+  <script>
+    (function(){
+      // Config from top
+      const formURL = (typeof FORM_URL !== 'undefined') ? FORM_URL : 'https://forms.gle/iAeuo6K2cNth3tCK7';
+      const waNumber = (typeof WHATSAPP_NUMBER !== 'undefined') ? WHATSAPP_NUMBER : '919159930410';
+      const email = (typeof EMAIL !== 'undefined') ? EMAIL : 'kumaran.v.4002@gmail.com';
+      const founder = (typeof FOUNDER !== 'undefined') ? FOUNDER : 'Kumaran.V';
+      const slot = (typeof SLOT_FEE !== 'undefined') ? SLOT_FEE : 500;
+
+      // Element refs
+      const bookNow = document.getElementById('bookNow');
+      const headerBooking = document.getElementById('headerBooking');
+      const stickyBtn = document.getElementById('stickyBtn');
+      const heroVideo = document.getElementById('heroVideo');
+      const waContact = document.getElementById('waContact');
+      const footerWA = document.getElementById('footerWA');
+
+      // Helper open form in a new tab
+      function openForm(){
+        // log event
+        try { console.log('EVENT: openForm', {time: Date.now(), formURL: formURL}); } catch(e){}
+        window.open(formURL, '_blank', 'noopener');
+      }
+
+      // Attach clicks to book buttons
+      [bookNow, headerBooking, stickyBtn].forEach(el=>{
+        if(!el) return;
+        el.addEventListener('click', function(ev){
+          ev.preventDefault();
+          openForm();
+        });
+        // accessibility: open on Enter/Space
+        el.addEventListener('keydown', function(e){
+          if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openForm(); }
+        });
+      });
+
+      // WhatsApp contact action
+      function openWhatsApp() {
+        const waUrl = 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent('Hi Kumaran, I have a question about booking a 48-hr AI project slot.');
+        window.open(waUrl, '_blank', 'noopener');
+      }
+      if(waContact) waContact.addEventListener('click', openWhatsApp);
+      if(footerWA){
+        footerWA.setAttribute('href', 'https://wa.me/' + waNumber);
+        footerWA.setAttribute('target', '_blank');
+      }
+
+      // Video playback lazy logic (autoplay muted if allowed)
+      function tryPlayVideo(){
+        if(!heroVideo) return;
+        heroVideo.setAttribute('preload','metadata');
+        // attempt to play (muted to satisfy autoplay rules)
+        heroVideo.muted = true;
+        var playPromise = heroVideo.play();
+        if(playPromise !== undefined){
+          playPromise.then(()=> {
+            // playing
+          }).catch((err)=> {
+            // Autoplay blocked. Show play overlay or leave it paused.
+            console.log('Autoplay blocked or user preference: ', err);
+          });
+        }
+      }
+      // Start try-play after small delay to allow chrome to handle gesture policy
+      window.addEventListener('load', function(){ setTimeout(tryPlayVideo, 250); });
+
+      // keyboard accessibility for sticky CTA
+      const sticky = document.querySelector('.sticky');
+      if(window.innerWidth >= 860 && sticky) sticky.style.display = 'none';
+      window.addEventListener('resize', function(){ if(window.innerWidth >= 860) sticky.style.display = 'none'; else sticky.style.display = 'flex'; });
+
+      // Small analytics hook example (replace with GA/FB pixels if needed)
+      window.addEventListener('click', function(e){
+        const t = e.target;
+        // Log clicks for CTA
+        if(t.closest && (t.closest('#bookNow') || t.closest('#headerBooking') || t.closest('#stickyBtn'))){
+          console.log('ANALYTICS: CTA_CLICK', {time:Date.now()});
+        }
+      }, true);
+
+      // Accessibility: focus outline for keyboard users
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Tab') document.documentElement.classList.add('show-focus');
+      });
+    })();
+  </script>
+</body>
+</html>
